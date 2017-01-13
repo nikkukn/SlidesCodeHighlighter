@@ -1,0 +1,346 @@
+/*
+ * Copyright 2017 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*
+ * Copyright 2017 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*
+ * Copyright 2017 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*
+ * Copyright 2017 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+[data-theme="light"] #output::after {
+  background-color: #f5f5f5; }
+
+[data-theme="light"] .pln {
+  color: #37474f; }
+
+[data-theme="light"] .clo {
+  color: #37474f; }
+
+[data-theme="light"] .str,
+[data-theme="light"] .atv {
+  color: #388e3c; }
+
+[data-theme="light"] .kwd,
+[data-theme="light"] .tag {
+  color: #3f51b5; }
+
+[data-theme="light"] .com {
+  color: #d81b60; }
+
+[data-theme="light"] .typ,
+[data-theme="light"] .atn {
+  color: #9c27b0; }
+
+[data-theme="light"] .lit {
+  color: #c53929; }
+
+[data-theme="light"] .pun,
+[data-theme="light"] .opn,
+[data-theme="light"] .dec,
+[data-theme="light"] .var {
+  color: #3f51b5; }
+
+[data-theme="light-alt"] #output::after {
+  background-color: #eee; }
+
+[data-theme="light-alt"] .pln {
+  color: #000; }
+
+[data-theme="light-alt"] .clo {
+  color: #a3a3a3; }
+
+[data-theme="light-alt"] .str,
+[data-theme="light-alt"] .atv {
+  color: #0f9d58; }
+
+[data-theme="light-alt"] .kwd,
+[data-theme="light-alt"] .tag {
+  color: #4285f4; }
+
+[data-theme="light-alt"] .com {
+  color: #999; }
+
+[data-theme="light-alt"] .typ,
+[data-theme="light-alt"] .atn {
+  color: #673ab7; }
+
+[data-theme="light-alt"] .lit {
+  color: #db4437; }
+
+[data-theme="light-alt"] .pun,
+[data-theme="light-alt"] .opn,
+[data-theme="light-alt"] .dec,
+[data-theme="light-alt"] .var {
+  color: #e67c73; }
+
+[data-theme="dark"] #output::after {
+  background-color: #212121; }
+
+[data-theme="dark"] .pln {
+  color: #eceff1; }
+
+[data-theme="dark"] .clo {
+  color: #eceff1; }
+
+[data-theme="dark"] .str,
+[data-theme="dark"] .atv {
+  color: #9ccc65; }
+
+[data-theme="dark"] .kwd,
+[data-theme="dark"] .tag {
+  color: #4dd0e1; }
+
+[data-theme="dark"] .com {
+  color: #f06292; }
+
+[data-theme="dark"] .typ,
+[data-theme="dark"] .atn {
+  color: #ce93d8; }
+
+[data-theme="dark"] .lit {
+  color: #fbc02d; }
+
+[data-theme="dark"] .pun,
+[data-theme="dark"] .opn,
+[data-theme="dark"] .dec,
+[data-theme="dark"] .var {
+  color: #fbc02d; }
+
+[data-theme="dark-alt"] #output::after {
+  background-color: #000; }
+
+[data-theme="dark-alt"] .pln {
+  color: #fff; }
+
+[data-theme="dark-alt"] .clo {
+  color: #a3a3a3; }
+
+[data-theme="dark-alt"] .str,
+[data-theme="dark-alt"] .atv {
+  color: #57bb8a; }
+
+[data-theme="dark-alt"] .kwd,
+[data-theme="dark-alt"] .tag {
+  color: #7baaf7; }
+
+[data-theme="dark-alt"] .com {
+  color: #aaa; }
+
+[data-theme="dark-alt"] .typ,
+[data-theme="dark-alt"] .atn {
+  color: #ff8a65; }
+
+[data-theme="dark-alt"] .lit {
+  color: #f4b400; }
+
+[data-theme="dark-alt"] .pun,
+[data-theme="dark-alt"] .opn,
+[data-theme="dark-alt"] .dec,
+[data-theme="dark-alt"] .var {
+  color: #e67c73; }
+
+[data-theme="design-dark"] #output::after {
+  background-color: #263238; }
+
+[data-theme="design-dark"] .pln {
+  color: #fff; }
+
+[data-theme="design-dark"] .clo {
+  color: #90a4ae; }
+
+[data-theme="design-dark"] .str,
+[data-theme="design-dark"] .atv {
+  color: #00bfa4; }
+
+[data-theme="design-dark"] .kwd,
+[data-theme="design-dark"] .tag {
+  color: #26c6da; }
+
+[data-theme="design-dark"] .com {
+  color: #607d8b; }
+
+[data-theme="design-dark"] .typ,
+[data-theme="design-dark"] .atn {
+  color: #ff8a80; }
+
+[data-theme="design-dark"] .lit {
+  color: #ffbc00; }
+
+[data-theme="design-dark"] .pun,
+[data-theme="design-dark"] .opn,
+[data-theme="design-dark"] .dec,
+[data-theme="design-dark"] .var {
+  color: #90a4ae; }
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #607d8b; }
+
+body {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 8px; }
+
+.edit-area,
+.output-area {
+  background-color: #fff;
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden; }
+
+.toolbar,
+.title-bar {
+  background-color: #37474f;
+  color: #fff; }
+
+.title-bar {
+  padding: 8px 12px 0 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  z-index: 100; }
+
+.toolbar {
+  flex: 0 0 auto;
+  padding: 4px 12px 8px 12px;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .toolbar label {
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline; }
+  .toolbar select,
+  .toolbar input {
+    -webkit-appearance: none;
+    border: 0;
+    background-color: #546e7a;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 8px;
+    outline: 0;
+    margin-left: 8px;
+    border-radius: 2px; }
+    .toolbar select:active, .toolbar select:focus,
+    .toolbar input:active,
+    .toolbar input:focus {
+      background-color: #fff;
+      color: #263238; }
+  .toolbar select {
+    cursor: pointer; }
+
+#editor {
+  flex: 1;
+  margin-top: 8px; }
+
+#output {
+  flex: 1;
+  position: relative;
+  padding: 20px; }
+  #output pre {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    font-family: 'Roboto Mono';
+    font-size: 10px;
+    line-height: 14px;
+    z-index: 1; }
+  #output::after {
+    content: '';
+    display: block;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; }
+
+.messages {
+  flex: 0 0 auto; }
+
+.message {
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 2px;
+  margin: 4px; }
+
+.message-warning {
+  background-color: #ff1744;
+  color: #fff; }
+
+.message-info {
+  background-color: #546e7a;
+  color: #fff; }
