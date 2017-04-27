@@ -223,6 +223,39 @@
 [data-theme="design-dark"] .var {
   color: #90a4ae; }
 
+[data-theme="io17"] #output::after {
+  background-color: #263238; }
+
+[data-theme="io17"] .pln {
+  color: #fff; }
+
+[data-theme="io17"] .clo {
+  color: #90a4ae; }
+
+[data-theme="io17"] .str,
+[data-theme="io17"] .atv {
+  color: #1ce8b5; }
+
+[data-theme="io17"] .kwd,
+[data-theme="io17"] .tag {
+  color: #00e4ff; }
+
+[data-theme="io17"] .com {
+  color: #ff5cb4; }
+
+[data-theme="io17"] .typ,
+[data-theme="io17"] .atn {
+  color: #ff8857; }
+
+[data-theme="io17"] .lit {
+  color: #ffd500; }
+
+[data-theme="io17"] .pun,
+[data-theme="io17"] .opn,
+[data-theme="io17"] .dec,
+[data-theme="io17"] .var {
+  color: #90a4ae; }
+
 html,
 body {
   margin: 0;
