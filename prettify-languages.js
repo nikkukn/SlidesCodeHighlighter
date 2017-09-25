@@ -1,17 +1,19 @@
-// Copyright (C) 2009 Onno Hommes.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+/**
+ * @license
+ * Copyright (C) 2009 Onno Hommes.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -49,6 +51,23 @@ PR['registerLangHandler'](
          [PR['PR_PUNCTUATION'], /^[^\w\t\n\r \xA0()\"\\\';]+/]
         ]),
     ['apollo', 'agc', 'aea']);
+
+/**
+ * @license
+ * Copyright (C) 2013 Peter Kofler
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 // Contributed by peter dot kofler at code minus cop dot org
 
@@ -148,21 +167,22 @@ PR['registerLangHandler'](
         ]),
     ['clj']);
 
-// Copyright (C) 2009 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
+/**
+ * @license
+ * Copyright (C) 2009 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -308,21 +328,22 @@ PR['registerLangHandler'](
         ]),
     ['css-str']);
 
-// Copyright (C) 2013 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
+/**
+ * @license
+ * Copyright (C) 2013 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -360,7 +381,7 @@ PR['registerLangHandler'](
       [PR['PR_KEYWORD'], /^\b(?:class|interface)\b/i],
 
       // General keywords.
-      [PR['PR_KEYWORD'], /^\b(?:assert|break|case|catch|continue|default|do|else|finally|for|if|in|is|new|return|super|switch|this|throw|try|while)\b/i],
+      [PR['PR_KEYWORD'], /^\b(?:assert|async|await|break|case|catch|continue|default|do|else|finally|for|if|in|is|new|return|super|switch|sync|this|throw|try|while)\b/i],
 
       // Declaration keywords.
       [PR['PR_KEYWORD'], /^\b(?:abstract|const|extends|factory|final|get|implements|native|operator|set|static|typedef|var)\b/i],
@@ -379,9 +400,12 @@ PR['registerLangHandler'](
       [PR['PR_STRING'], /^r?\'(\'|(?:[^\n\r\f])*?[^\\]\')/],
       [PR['PR_STRING'], /^r?\"(\"|(?:[^\n\r\f])*?[^\\]\")/],
 
+      // Types are capitalized by convention.
+      [PR['PR_TYPE'], /^[A-Z]\w*/],
+
       // Identifiers.
       [PR['PR_PLAIN'], /^[a-z_$][a-z0-9_]*/i],
-      
+
       // Operators.
       [PR['PR_PUNCTUATION'], /^[~!%^&*+=|?:<>/-]/],
 
@@ -397,20 +421,22 @@ PR['registerLangHandler'](
     ]),
   ['dart']);
 
-// Copyright (C) 2013 Andrew Allen
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+/**
+ * @license
+ * Copyright (C) 2013 Andrew Allen
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -490,21 +516,105 @@ PR['registerLangHandler'](
         ]),
     ['erlang', 'erl']);
 
-// Copyright (C) 2010 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+ * @license
+ * Copyright (C) 2017 Jacek Królikowski
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
+/**
+ * @fileoverview
+ * Registers a language handler for Elixir.
+ *
+ * @author nietaki@gmail.com
+ */
 
+PR['registerLangHandler'](
+    PR['createSimpleLexer'](
+        [
+         [PR['PR_PLAIN'], /^[\t\n\r \xA0]+/, null, '\t\n\r \xA0'],
+         // # comments
+         [PR['PR_COMMENT'], /^#.*/, null, '#'],
+         // a (possibly multiline) charlist
+         [PR['PR_LITERAL'], /^'(?:[^'\\]|\\(?:.|\n|\r))*'?/, null, '\''],
+         // @attributes
+         [PR['PR_ATTRIB_NAME'], /^@\w+/, null, '@'],
+         [PR['PR_PUNCTUATION'], /^[!%&()*+,\-;<=>?\[\\\]^{|}]+/, null,
+          '!%&()*+,-;<=>?[\\]^{|}'],
+         // Borrowed from lang-erlang.js:
+         [PR['PR_LITERAL'],
+          /^(?:0o[0-7](?:[0-7]|_[0-7])*|0x[\da-fA-F](?:[\da-fA-F]|_[\da-fA-F])*|\d(?:\d|_\d)*(?:\.\d(?:\d|_\d)*)?(?:[eE][+\-]?\d(?:\d|_\d)*)?)/,
+          null, '0123456789']
+        ],
+        [
+         // the iex> prompt for interactive examples
+         [PR['PR_ATTRIB_NAME'], /^iex(?:\(\d+\))?> /],
+         // special case for binaries, so that they don't get presented like atoms
+         [PR['PR_PUNCTUATION'], /^::/],
+         // atoms - :__a_word or :"colon followed by a string"
+         [PR['PR_LITERAL'], /^:(?:\w+[\!\?\@]?|"(?:[^"\\]|\\.)*"?)/],
+         // compile-time information
+         [PR['PR_ATTRIB_NAME'], /^(?:__(?:CALLER|ENV|MODULE|DIR)__)/],
+         // keywords
+         [PR['PR_KEYWORD'],
+          /^(?:alias|case|catch|def(?:delegate|exception|impl|macrop?|module|overridable|p?|protocol|struct)|do|else|end|fn|for|if|in|import|quote|raise|require|rescue|super|throw|try|unless|unquote(?:_splicing)?|use|when|with|yield)\b/],
+         [PR['PR_LITERAL'], /^(?:true|false|nil)\b/],
+         // atoms as keyword list keys
+         // NOTE: this does also handle the %{"I'm an atom": :foo} case
+         //
+         // Contains negative lookahead to handle <<foo::binary>>
+         [PR['PR_LITERAL'], /^(?:\w+[\!\?\@]?|"(?:[^"\\]|\\.)*"):(?!:)/],
+         // heredoc: triple double-quoted multi-line string.
+         //
+         // NOTE: the opening """ needs to be followed by a newline
+         [PR['PR_STRING'],
+          /^"""\s*(\r|\n)+(?:""?(?!")|[^\\"]|\\(?:.|\n|\r))*"{0,3}/],
+         // A double-quoted multi-line string
+         [PR['PR_STRING'],
+          /^"(?:[^"\\]|\\(?:.|\n|\r))*"?(?!")/],
+         // types
+         [PR['PR_TYPE'], /^[A-Z]\w*/],
+         // variables not meant to be used or private functions
+         [PR['PR_COMMENT'], /^_\w*/],
+         // plain: variables, functions, ...
+         [PR['PR_PLAIN'], /^[$a-z]\w*[\!\?]?/],
+         // sigils with the same starting and ending character.
+         // Key part: X(?:[^X\r\n\\]|\\.)+X where X is the sigil character
+         [PR['PR_ATTRIB_VALUE'], /^~[A-Z](?:\/(?:[^\/\r\n\\]|\\.)+\/|\|(?:[^\|\r\n\\]|\\.)+\||"(?:[^"\r\n\\]|\\.)+"|'(?:[^'\r\n\\]|\\.)+')[A-Z]*/i],
+         // sigils with a different starting and ending character.
+         // Key part: X(?:[^Y\r\n\\]|\\.)+Y where X and Y are the starting and ending characters
+         [PR['PR_ATTRIB_VALUE'], /^~[A-Z](?:\((?:[^\)\r\n\\]|\\.)+\)|\[(?:[^\]\r\n\\]|\\.)+\]|\{(?:[^\}\r\n\\]|\\.)+\}|\<(?:[^\>\r\n\\]|\\.)+\>)[A-Z]*/i],
+         [PR['PR_PUNCTUATION'], /^(?:\.+|\/|[:~])/]
+        ]),
+    ['ex','exs']);
+
+/**
+ * @license
+ * Copyright (C) 2010 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -549,21 +659,22 @@ PR['registerLangHandler'](
         ]),
     ['go']);
 
-// Copyright (C) 2009 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
+/**
+ * @license
+ * Copyright (C) 2009 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -651,21 +762,149 @@ PR['registerLangHandler'](
         ]),
     ['hs']);
 
-// Copyright (C) 2008 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+ * @license
+ * Copyright (C) 2017 Michał Bączkowski
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
+/**
+ * @fileoverview
+ * Registers a language handler for Kotlin.
+ *
+ * Limitations:
+ * - doesn't support string interpolation ("$var")
+ * - doesn't support labels if there is no space between the keyword (break@loop, loop@for)
+ *
+ * @author mibac138@gmail.com
+ */
 
+PR['registerLangHandler'](
+    PR['createSimpleLexer'](
+        [
+            [PR['PR_PLAIN'], /^[\t\n\r \xA0]+/, null, '\t\n\r \xA0'],
+            [PR['PR_PUNCTUATION'], /^[.!%&()*+,\-;<=>?\[\\\]^{|}:]+/, null, '.!%&()*+,-;<=>?[\\]^{|}:']
+        ],
+        [
+            // keywords
+            [PR['PR_KEYWORD'],
+                /^\b(package|public|protected|private|open|abstract|constructor|final|override|import|for|while|as|typealias|get|set|((data|enum|annotation|sealed) )?class|this|super|val|var|fun|is|in|throw|return|break|continue|(companion )?object|if|try|else|do|when|init|interface|typeof)\b/],
+            [PR['PR_LITERAL'], /^(?:true|false|null)\b/],
+            // number literals
+            [PR['PR_LITERAL'], /^(0[xX][0-9a-fA-F_]+L?|0[bB][0-1]+L?|[0-9_.]+([eE]-?[0-9]+)?[fFL]?)/],
+            [PR['PR_TYPE'], /^(\b[A-Z]+[a-z][a-zA-Z0-9_$@]*|`.*`)/, null],
+            //double slash comments
+            [PR['PR_COMMENT'], /^\/\/.*/],
+            //slash star comments and documentation
+            [PR['PR_COMMENT'], /^\/\*[\s\S]*?(?:\*\/|$)/],
+            // char
+            [PR['PR_STRING'], /'.'/],
+            // string
+            [PR['PR_STRING'], /^"([^"\\]|\\[\s\S])*"/],
+            // multiline string
+            [PR['PR_STRING'], /^"{3}[\s\S]*?[^\\]"{3}/],
+            // annotation (and label)
+            [PR['PR_LITERAL'], /^@([a-zA-Z0-9_$@]*|`.*`)/],
+            // label definition
+            [PR['PR_LITERAL'], /^[a-zA-Z0-9_]+@/]
+        ]),
+    ['kotlin']);
+
+/**
+ * @license
+ * Copyright (C) 2013 Eric Knibbe
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @fileoverview
+ * Registers a language handler for Lasso. <http://www.lassosoft.com>
+ *
+ * To use, include prettify.js and this file in your HTML page.
+ * Then enclose your code in an HTML tag like so:
+ *      <pre class="prettyprint lang-lasso">[your Lasso code]</pre>
+ *
+ * @author Eric Knibbe
+ */
+
+PR['registerLangHandler'](
+    PR['createSimpleLexer'](
+        [
+          // whitespace
+          [PR['PR_PLAIN'],        /^[\t\n\r \xA0]+/, null, '\t\n\r \xA0'],
+          // single quote strings
+          [PR['PR_STRING'],       /^\'(?:[^\'\\]|\\[\s\S])*(?:\'|$)/, null, "'"],
+          // double quote strings
+          [PR['PR_STRING'],       /^\"(?:[^\"\\]|\\[\s\S])*(?:\"|$)/, null, '"'],
+          // ticked strings
+          [PR['PR_STRING'],       /^\`[^\`]*(?:\`|$)/, null, '`'],
+          // numeral as integer or hexidecimal
+          [PR['PR_LITERAL'],      /^0x[\da-f]+|\d+/i, null, '0123456789'],
+          // local or thread variables, or hashbang
+          [PR['PR_ATTRIB_NAME'],  /^#\d+|[#$][a-z_][\w.]*|#![ \S]+lasso9\b/i, null, '#$']
+        ],
+        [
+          // square or angle bracket delimiters
+          [PR['PR_TAG'],          /^[[\]]|<\?(?:lasso(?:script)?|=)|\?>|noprocess\b|no_square_brackets\b/i],
+          // single-line or block comments
+          [PR['PR_COMMENT'],      /^\/\/[^\r\n]*|\/\*[\s\S]*?\*\//],
+          // member variables or keyword parameters
+          [PR['PR_ATTRIB_NAME'],  /^-(?!infinity)[a-z_][\w.]*|\.\s*'[a-z_][\w.]*'/i],
+          // numeral as decimal or scientific notation
+          [PR['PR_LITERAL'],      /^\d*\.\d+(?:e[-+]?\d+)?|infinity\b|NaN\b/i],
+          // tag literals
+          [PR['PR_ATTRIB_VALUE'], /^::\s*[a-z_][\w.]*/i],
+          // constants
+          [PR['PR_LITERAL'],      /^(?:true|false|none|minimal|full|all|void|and|or|not|bw|nbw|ew|new|cn|ncn|lt|lte|gt|gte|eq|neq|rx|nrx|ft)\b/i],
+          // container or control keywords
+          [PR['PR_KEYWORD'],      /^(?:error_code|error_msg|error_pop|error_push|error_reset|cache|database_names|database_schemanames|database_tablenames|define_tag|define_type|email_batch|encode_set|html_comment|handle|handle_error|header|if|inline|iterate|ljax_target|link|link_currentaction|link_currentgroup|link_currentrecord|link_detail|link_firstgroup|link_firstrecord|link_lastgroup|link_lastrecord|link_nextgroup|link_nextrecord|link_prevgroup|link_prevrecord|log|loop|namespace_using|output_none|portal|private|protect|records|referer|referrer|repeating|resultset|rows|search_args|search_arguments|select|sort_args|sort_arguments|thread_atomic|value_list|while|abort|case|else|if_empty|if_false|if_null|if_true|loop_abort|loop_continue|loop_count|params|params_up|return|return_value|run_children|soap_definetag|soap_lastrequest|soap_lastresponse|tag_name|ascending|average|by|define|descending|do|equals|frozen|group|handle_failure|import|in|into|join|let|match|max|min|on|order|parent|protected|provide|public|require|returnhome|skip|split_thread|sum|take|thread|to|trait|type|where|with|yield|yieldhome)\b/i],
+          // standard type or variable declarations
+          [PR['PR_TYPE'],         /^(?:array|date|decimal|duration|integer|map|pair|string|tag|xml|null|boolean|bytes|keyword|list|locale|queue|set|stack|staticarray|local|var|variable|global|data|self|inherited|currentcapture|givenblock)\b|^\.\.?/i],
+          // type, method, or parameter names
+          [PR['PR_PLAIN'],        /^[a-z_][\w.]*(?:=\s*(?=\())?/i],
+          // operators
+          [PR['PR_PUNCTUATION'],  /^:=|[-+*\/%=<>&|!?\\]/]
+        ]),
+    ['lasso', 'ls', 'lassoscript']);
+
+/**
+ * @license
+ * Copyright (C) 2008 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -746,20 +985,22 @@ PR['registerLangHandler'](
         ]),
     ['cl', 'el', 'lisp', 'lsp', 'scm', 'ss', 'rkt']);
 
-// Copyright (C) 2013 Nikhil Dabas
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+/**
+ * @license
+ * Copyright (C) 2013 Nikhil Dabas
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -808,21 +1049,73 @@ PR['registerLangHandler'](
         ]),
     ['llvm', 'll']);
 
-// Copyright (C) 2008 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+ * @license
+ * Copyright (C) 2014 Paulo Moura
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
+/**
+ * @fileoverview
+ * Registers a language handler for Logtalk.
+ * http://logtalk.org/
+ * @author Paulo Moura
+ */
 
+PR['registerLangHandler'](
+    PR['createSimpleLexer'](
+        [
+          // double-quoted strings.
+          [PR['PR_STRING'], /^\"(?:[^\"\\\n\x0C\r]|\\[\s\S])*(?:\"|$)/, null, '"'],
+          // atoms (don't break on underscores!)
+          [PR['PR_LITERAL'], /^[a-z][a-zA-Z0-9_]*/],
+          // quoted atoms
+          [PR['PR_LITERAL'], /^\'(?:[^\'\\\n\x0C\r]|\\[^&])+\'?/, null, "'"],
+          // numbers
+          [PR['PR_LITERAL'], /^(?:0'.|0b[0-1]+|0o[0-7]+|0x[\da-f]+|\d+(?:\.\d+)?(?:e[+\-]?\d+)?)/i, null, '0123456789']
+        ],
+        [
+          // single-line comments begin with %
+          [PR['PR_COMMENT'], /^%[^\r\n]*/, null, '%'],
+          // block comments are delimited by /* and */
+          [PR['PR_COMMENT'], /^\/\*[\s\S]*?\*\//],
+          // directives
+          [PR['PR_KEYWORD'], /^\s*:-\s(c(a(lls|tegory)|oinductive)|p(ublic|r(ot(ocol|ected)|ivate))|e(l(if|se)|n(coding|sure_loaded)|xport)|i(f|n(clude|itialization|fo))|alias|d(ynamic|iscontiguous)|m(eta_(non_terminal|predicate)|od(e|ule)|ultifile)|reexport|s(et_(logtalk|prolog)_flag|ynchronized)|o(bject|p)|use(s|_module))/],
+          [PR['PR_KEYWORD'], /^\s*:-\s(e(lse|nd(if|_(category|object|protocol)))|built_in|dynamic|synchronized|threaded)/],
+          // variables
+          [PR['PR_TYPE'], /^[A-Z_][a-zA-Z0-9_]*/],
+          // operators
+          [PR['PR_PUNCTUATION'], /^[.,;{}:^<>=\\/+*?#!-]/]
+        ]),
+    ['logtalk', 'lgt']);
+
+/**
+ * @license
+ * Copyright (C) 2008 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -868,25 +1161,28 @@ PR['registerLangHandler'](
         ]),
     ['lua']);
 
-// Copyright (c) 2013 by Amro <amroamroamro@gmail.com>
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
+/**
+ * @license
+ * Copyright (c) 2013 by Amro <amroamroamro@gmail.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
 
 /**
  * @fileoverview
@@ -1049,21 +1345,22 @@ PR['registerLangHandler'](
   );
 })(window['PR']);
 
-// Copyright (C) 2008 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
+/**
+ * @license
+ * Copyright (C) 2008 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1106,21 +1403,22 @@ PR['registerLangHandler'](
         ]),
     ['fs', 'ml']);
 
-// Copyright (C) 2011 Kitware Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
+/**
+ * @license
+ * Copyright (C) 2011 Kitware Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1246,20 +1544,22 @@ var fallthroughStylePatterns = [
 PR.registerLangHandler(PR.createSimpleLexer(shortcutStylePatterns, fallthroughStylePatterns), ['mumps']);
 })();
 
-// Copyright (C) 2011 Zimin A.V.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+/**
+ * @license
+ * Copyright (C) 2011 Zimin A.V.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1312,6 +1612,23 @@ PR.registerLangHandler(PR.createSimpleLexer(shortcutStylePatterns, fallthroughSt
       ['n', 'nemerle']);
 })();
 
+/**
+ * @license
+ * Copyright (C) 2013 Peter Kofler
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 // Contributed by peter dot kofler at code minus cop dot org
 
 /**
@@ -1345,20 +1662,22 @@ PR.registerLangHandler(
         ]),
     ['pascal']);
 
-// Copyright (C) 2006 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+/**
+ * @license
+ * Copyright (C) 2006 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1381,20 +1700,22 @@ PR['registerLangHandler'](PR['sourceDecorator']({
         'cStyleComments': true
       }), ['proto']);
 
-// Copyright (C) 2012 Jeffrey B. Arnold
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+/**
+ * @license
+ * Copyright (C) 2012 Jeffrey B. Arnold
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1439,19 +1760,22 @@ PR['registerLangHandler'](
         ]),
     ['r', 's', 'R', 'S', 'Splus']);
 
-// Copyright (C) 2012 Jeffrey Arnold
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+ * @license
+ * Copyright (C) 2012 Jeffrey Arnold
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1487,20 +1811,104 @@ PR['registerLangHandler'](
         ]),
     ['Rd', 'rd']);
 
-// Copyright (C) 2010 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+ * @license
+ * Copyright (C) 2015 Chris Morgan
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
+/**
+ * @fileoverview
+ * Registers a language handler for Rust.
+ *
+ * Derived from prior experience implementing similar things in a few environments,
+ * most especially rust.vim.
+ *
+ * @author me@chrismorgan.info
+ */
+
+PR['registerLangHandler'](
+    PR['createSimpleLexer']([], [
+		// Whitespace
+		[PR['PR_PLAIN'],       /^[\t\n\r \xA0]+/],
+
+		// Single line comments
+		[PR['PR_COMMENT'], /^\/\/.*/],
+		// Block comments (sadly I do not see how to make this cope with comment nesting as it should)
+		[PR['PR_COMMENT'], /^\/\*[\s\S]*?(?:\*\/|$)/],//, null],
+		// String and character literals
+		[PR['PR_STRING'], /^b"(?:[^\\]|\\(?:.|x[\da-fA-F]{2}))*?"/],  // Bytes literal
+		[PR['PR_STRING'], /^"(?:[^\\]|\\(?:.|x[\da-fA-F]{2}|u\{\[\da-fA-F]{1,6}\}))*?"/],  // String literal
+		[PR['PR_STRING'], /^b?r(#*)\"[\s\S]*?\"\1/],  // Raw string/bytes literal
+		[PR['PR_STRING'], /^b'([^\\]|\\(.|x[\da-fA-F]{2}))'/],  // Byte literal
+		[PR['PR_STRING'], /^'([^\\]|\\(.|x[\da-fA-F]{2}|u\{[\da-fA-F]{1,6}\}))'/],  // Character literal
+
+		// Lifetime
+		[PR['PR_TAG'], /^'\w+?\b/],
+
+		// Keywords, reserved keywords and primitive types
+		[PR['PR_KEYWORD'], /^(?:match|if|else|as|break|box|continue|extern|fn|for|in|if|impl|let|loop|pub|return|super|unsafe|where|while|use|mod|trait|struct|enum|type|move|mut|ref|static|const|crate)\b/],
+		[PR['PR_KEYWORD'], /^(?:alignof|become|do|offsetof|priv|pure|sizeof|typeof|unsized|yield|abstract|virtual|final|override|macro)\b/],
+		[PR['PR_TYPE'], /^(?:[iu](8|16|32|64|size)|char|bool|f32|f64|str|Self)\b/],
+
+		// Rust 1.0 prelude items
+		[PR['PR_TYPE'], /^(?:Copy|Send|Sized|Sync|Drop|Fn|FnMut|FnOnce|Box|ToOwned|Clone|PartialEq|PartialOrd|Eq|Ord|AsRef|AsMut|Into|From|Default|Iterator|Extend|IntoIterator|DoubleEndedIterator|ExactSizeIterator|Option|Some|None|Result|Ok|Err|SliceConcatExt|String|ToString|Vec)\b/],
+
+		// Literals:
+		[PR['PR_LITERAL'], /^(self|true|false|null)\b/],
+		// A number is a hex integer literal, a decimal real literal, or in
+		// scientific notation.
+		// Integer literals: decimal, hexadecimal, octal, binary.
+		[PR['PR_LITERAL'], /^\d[0-9_]*(?:[iu](?:size|8|16|32|64))?/],
+		[PR['PR_LITERAL'], /^0x[a-fA-F0-9_]+(?:[iu](?:size|8|16|32|64))?/],
+		[PR['PR_LITERAL'], /^0o[0-7_]+(?:[iu](?:size|8|16|32|64))?/],
+		[PR['PR_LITERAL'], /^0b[01_]+(?:[iu](?:size|8|16|32|64))?/],
+		// Float literals
+		[PR['PR_LITERAL'], /^\d[0-9_]*\.(?![^\s\d.])/],
+		[PR['PR_LITERAL'], /^\d[0-9_]*(?:\.\d[0-9_]*)(?:[eE][+-]?[0-9_]+)?(?:f32|f64)?/],
+		[PR['PR_LITERAL'], /^\d[0-9_]*(?:\.\d[0-9_]*)?(?:[eE][+-]?[0-9_]+)(?:f32|f64)?/],
+		[PR['PR_LITERAL'], /^\d[0-9_]*(?:\.\d[0-9_]*)?(?:[eE][+-]?[0-9_]+)?(?:f32|f64)/],
+
+		// Macro invocations (an identifier plus a !)
+		[PR['PR_ATTRIB_NAME'], /^[a-z_]\w*!/i],
+		// An identifier (sorry, this should be unicode)
+		[PR['PR_PLAIN'], /^[a-z_]\w*/i],
+		// Attributes
+		[PR['PR_ATTRIB_VALUE'], /^#!?\[[\s\S]*?\]/],
+		// All the punctuation
+		[PR['PR_PUNCTUATION'], /^[+\-/*=^&|!<>%[\](){}?:.,;]/],
+		// Anything else (which is probably illegal, as all the legal stuff should have been covered) can be plain
+		[PR['PR_PLAIN'], /./]
+		]),
+    ['rust']);
+
+/**
+ * @license
+ * Copyright (C) 2010 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1542,21 +1950,22 @@ PR['registerLangHandler'](
         ]),
     ['scala']);
 
-// Copyright (C) 2008 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
+/**
+ * @license
+ * Copyright (C) 2008 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1601,21 +2010,83 @@ PR['registerLangHandler'](
         ]),
     ['sql']);
 
-// Copyright (C) 2012 Pyrios.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+ * @license
+ * Copyright (C) 2015 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
+/**
+ * @fileoverview
+ * Registers a language handler for Swift
+ *
+ *
+ * To use, include prettify.js and this file in your HTML page.
+ * Then put your code in an HTML tag like
+ *      <pre class="prettyprint lang-swift">(my swift code)</pre>
+ * This file supports the following language extensions:
+ *     lang-swift - Swift
+ *
+ * I used https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AboutTheLanguageReference.html
+ * as the source of truth for this. The revision from 2015-10-21 (Swift 2.1) was used in most recent update.
+ *
+ * @author cerech@google.com
+ */
 
+PR['registerLangHandler'](
+    PR['createSimpleLexer'](
+        [
+          //whitespace
+          [PR['PR_PLAIN'],                /^[ \n\r\t\v\f\0]+/, null, ' \n\r\t\v\f\0'],
+          //string literals
+          [PR['PR_STRING'],               /^"(?:[^"\\]|(?:\\.)|(?:\\\((?:[^"\\)]|\\.)*\)))*"/, null, '"']
+        ],
+        [
+          //floating point literals
+          [PR['PR_LITERAL'],              /^(?:(?:0x[\da-fA-F][\da-fA-F_]*\.[\da-fA-F][\da-fA-F_]*[pP]?)|(?:\d[\d_]*\.\d[\d_]*[eE]?))[+-]?\d[\d_]*/, null],
+          //integer literals
+          [PR['PR_LITERAL'],              /^-?(?:(?:0(?:(?:b[01][01_]*)|(?:o[0-7][0-7_]*)|(?:x[\da-fA-F][\da-fA-F_]*)))|(?:\d[\d_]*))/, null],
+          //some other literals
+          [PR['PR_LITERAL'],              /^(?:true|false|nil)\b/, null],
+          //keywords
+          [PR['PR_KEYWORD'],              /^\b(?:__COLUMN__|__FILE__|__FUNCTION__|__LINE__|#available|#else|#elseif|#endif|#if|#line|arch|arm|arm64|associativity|as|break|case|catch|class|continue|convenience|default|defer|deinit|didSet|do|dynamic|dynamicType|else|enum|extension|fallthrough|final|for|func|get|guard|import|indirect|infix|init|inout|internal|i386|if|in|iOS|iOSApplicationExtension|is|lazy|left|let|mutating|none|nonmutating|operator|optional|OSX|OSXApplicationExtension|override|postfix|precedence|prefix|private|protocol|Protocol|public|required|rethrows|return|right|safe|self|set|static|struct|subscript|super|switch|throw|try|Type|typealias|unowned|unsafe|var|weak|watchOS|while|willSet|x86_64)\b/, null],
+          //double slash comments
+          [PR['PR_COMMENT'],              /^\/\/.*?[\n\r]/, null],
+          //slash star comments
+          [PR['PR_COMMENT'],              /^\/\*[\s\S]*?(?:\*\/|$)/, null],
+          //punctuation
+          [PR['PR_PUNCTUATION'],          /^<<=|<=|<<|>>=|>=|>>|===|==|\.\.\.|&&=|\.\.<|!==|!=|&=|~=|~|\(|\)|\[|\]|{|}|@|#|;|\.|,|:|\|\|=|\?\?|\|\||&&|&\*|&\+|&-|&=|\+=|-=|\/=|\*=|\^=|%=|\|=|->|`|==|\+\+|--|\/|\+|!|\*|%|<|>|&|\||\^|\?|=|-|_/, null],
+          [PR['PR_TYPE'],                 /^\b(?:[@_]?[A-Z]+[a-z][A-Za-z_$@0-9]*|\w+_t\b)/, null]   //borrowing the type regex given by the main program for C-family languages
+        ]),
+    ['swift']); 
+
+/**
+ * @license
+ * Copyright (C) 2012 Pyrios
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1664,19 +2135,22 @@ PR['registerLangHandler'](
         ]),
     ['tcl']);
 
-// Copyright (C) 2011 Martin S.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/**
+ * @license
+ * Copyright (C) 2011 Martin S.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1711,21 +2185,22 @@ PR['registerLangHandler'](
         ]),
     ['latex', 'tex']);
 
-// Copyright (C) 2009 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
-
+/**
+ * @license
+ * Copyright (C) 2009 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1779,6 +2254,23 @@ PR['registerLangHandler'](
     ['vb', 'vbs']);
 
 /**
+ * @license
+ * Copyright (C) 2010 benoit@ryder.fr
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
  * @fileoverview
  * Registers a language handler for VHDL '93.
  *
@@ -1813,20 +2305,22 @@ PR['registerLangHandler'](
         ]),
     ['vhdl', 'vhd']);
 
-// Copyright (C) 2009 Google Inc.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+/**
+ * @license
+ * Copyright (C) 2009 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 /**
  * @fileoverview
@@ -1867,20 +2361,22 @@ PR['registerLangHandler'](
     PR['createSimpleLexer']([[PR['PR_KEYWORD'], /^#[a-z]+/i, null, '#']], []),
     ['wiki.meta']);
 
-// Copyright (C) 2011 Patrick Wied
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
+/**
+ * @license
+ * Copyright (C) 2011 Patrick Wied
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 
 /**
@@ -1896,6 +2392,7 @@ PR['registerLangHandler'](
  * @version 2010-09-28
  */
 
+(function () {
 // Falls back to plain for stylesheets that don't style fun.
 var PR_FUNCTION = 'fun pln';
 // Falls back to plaiin for stylesheets that don't style var.
@@ -1934,6 +2431,25 @@ PR['registerLangHandler'](
          [PR['PR_PLAIN'], /^[\t\n\r \xA0]+/]
          ]),
     ['xq', 'xquery']);
+})();
+
+/**
+ * @license
+ * Copyright (C) 2015 ribrdb @ code.google.com
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 
 // Contributed by ribrdb @ code.google.com
 
@@ -1959,6 +2475,6 @@ PR['registerLangHandler'](
     [
       [PR['PR_DECLARATION'], /^(?:---|\.\.\.)(?:[\r\n]|$)/],
       [PR['PR_PUNCTUATION'], /^-/],
-      [PR['PR_KEYWORD'], /^\w+:[ \r\n]/],
+      [PR['PR_KEYWORD'], /^[\w-]+:[ \r\n]/],
       [PR['PR_PLAIN'], /^\w+/]
     ]), ['yaml', 'yml']);
